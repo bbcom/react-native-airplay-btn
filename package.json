@@ -16,5 +16,6 @@
     "type": "git",
     "url": "git@github.com:ndillon1/react-native-airplay-btn.git"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "homePage": "https://github.com/bbcom/react-native-airplay-btn/blob/master/README.md"
 }
