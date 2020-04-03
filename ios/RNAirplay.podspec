@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/bbcom/react-native-airplay-btn/RNAirplay.git", :tag => "master" }
   s.source_files  = "RNAirplay/**/*.{h,m}"
   s.requires_arc = true
-
+  s.homepage = "https://github.com/bbcom/react-native-airplay-btn"
 
   s.dependency "React"
   #s.dependency "others"
