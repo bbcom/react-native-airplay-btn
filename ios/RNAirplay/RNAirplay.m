@@ -46,14 +46,16 @@ RCT_EXPORT_METHOD(startScan)
          object:nil];
 
     }
-    [self sendEventWithName:@"airplayAvailable" body:@{@"available": @(isAvailable)}];
+    // not currently listening for this event
+    // [self sendEventWithName:@"airplayAvailable" body:@{@"available": @(isAvailable)}];
 }
 
 RCT_EXPORT_METHOD(disconnect)
 {
     printf("disconnect Airplay");
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    [self sendEventWithName:@"airplayAvailable" body:@{@"available": @(NO) }];
+    // not currently listening for this event
+    //[self sendEventWithName:@"airplayAvailable" body:@{@"available": @(NO) }];
 }
 
 
@@ -82,7 +84,7 @@ RCT_EXPORT_METHOD(disconnect)
 }
 
 - (NSArray<NSString *> *)supportedEvents {
-    return @[@"airplayAvailable", @"airplayConnected"];
+    return @[/*@"airplayAvailable",*/ @"airplayConnected"];
 }
 
 
