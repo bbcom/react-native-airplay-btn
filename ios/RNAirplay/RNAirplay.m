@@ -5,11 +5,12 @@
 #import <MediaPlayer/MediaPlayer.h>
 
 @implementation RNAirplay
-@synthesize bridge = _bridge;
-
 {
   bool hasListeners;
 }
+@synthesize bridge = _bridge;
+
+
 
 -(void)startObserving {
     hasListeners = YES;
